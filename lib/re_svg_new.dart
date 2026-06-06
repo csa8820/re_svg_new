@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
-import 'package:re_svg_new/resvg_ffi.dart';
+import 'resvg_ffi.dart' if (dart.library.js_interop) 'resvg_web.dart';
 
 class SvgView extends StatefulWidget {
   final String data;

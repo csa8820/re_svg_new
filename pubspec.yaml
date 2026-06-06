@@ -1,6 +1,6 @@
 name: re_svg_new
 description: "A tiny and super-fast SVG rendering library for Flutter, with CSS support."
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/csa8820/re_svg_new
 repository: https://github.com/csa8820/re_svg_new
 
@@ -10,7 +10,10 @@ environment:
 
 dependencies:
   ffi: ^2.1.2
+  web: ^1.1.0
   flutter:
+    sdk: flutter
+  flutter_web_plugins:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
 
@@ -49,6 +52,9 @@ flutter:
       macos:
         ffiPlugin: true
         pluginClass: ReSvgPlugin
+      web:
+        pluginClass: ReSvgWeb
+        fileName: re_svg_web_plugin.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

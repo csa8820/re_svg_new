@@ -32,8 +32,16 @@ SvgView(
 - [x] Android
 - [x] macOS
 - [ ] Windows
-- [ ] Linux
-- [ ] Web
+- [x] Linux
+- [x] Web
+
+Linux is supported via the bundled native `libresvg.so` library.
+
+On Web there is no native resvg binary, so `SvgView` falls back to the
+browser's own SVG engine: the SVG is rasterized through an `<img>`/`<canvas>`
+pipeline and returned to Flutter as a `ui.Image`. The public API is identical,
+but rendering of fonts and advanced CSS may differ slightly from the native
+resvg output.
 
 ## Related Projects
 - [resvg_action](https://github.com/rustui/resvg_action) - Use GitHub Actions to compile the Rust library resvg for different platforms.

@@ -1,3 +1,14 @@
+## 0.0.7
+
+* Add **Web** support. Since there is no native resvg binary in the browser,
+  `SvgView` renders on Web by rasterizing the SVG through an `<img>`/`<canvas>`
+  pipeline and returning a `ui.Image`. The native (FFI) and Web
+  implementations are selected automatically via conditional imports, so the
+  public API (`SvgView`, `ReSvg`, `ResvgFonts`) is unchanged.
+* Note: on Web, custom font blobs and the system-font toggle in `ResvgFonts`
+  are accepted for source compatibility but have no effect; rendering uses the
+  browser's fonts.
+
 ## 0.0.6
 
 * Align all platforms to resvg **v0.42.0** (the version the iOS/macOS pod
