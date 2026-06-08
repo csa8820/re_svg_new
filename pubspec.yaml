@@ -1,6 +1,6 @@
 name: re_svg_new
 description: "A tiny and super-fast SVG rendering library for Flutter, with CSS support."
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/csa8820/re_svg_new
 repository: https://github.com/csa8820/re_svg_new
 
