@@ -1,3 +1,8 @@
+## 0.0.8
+
+* Lower the `web` dependency constraint to `>=0.3.0 <0.6.0` to stay within the
+  compatible range for current web builds.
+
 ## 0.0.7
 
 * Add **Web** support. Since there is no native resvg binary in the browser,
